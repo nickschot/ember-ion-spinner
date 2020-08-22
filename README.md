@@ -7,7 +7,7 @@ Ember Spinner component based on https://ionicframework.com/docs/api/spinner
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.12 or above
+* Ember.js v3.13 or above
 * Ember CLI v2.13 or above
 * Node.js v10 or above
 
