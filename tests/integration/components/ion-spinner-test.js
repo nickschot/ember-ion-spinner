@@ -13,14 +13,5 @@ module('Integration | Component | ion-spinner', function(hooks) {
     await render(hbs`<IonSpinner />`);
 
     assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      <IonSpinner>
-        template block text
-      </IonSpinner>
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
   });
 });
