@@ -1,0 +1,23 @@
+<div
+  local-class="spinner spinner-{{this.name}} {{if @paused "spinner-paused"}}"
+  style={{if this.spinner.elmDuration (concat "animation-duration: " this.duration "ms;")}}
+  ...attributes
+>
+  {{#each this.linesData as |data|}}
+    <svg viewBox={{if data.viewBox data.viewBox "0 0 64 64"}} style={{data.style}}>
+      <line transform="translate(32,32)" y1={{data.y1}} y2={{data.y2}}></line>
+    </svg>
+  {{/each}}
+
+  {{#each this.circlesData as |data|}}
+    <svg viewBox={{if data.viewBox data.viewBox "0 0 64 64"}} style={{data.style}}>
+      <circle
+        transform={{if data.transform data.transform "translate(32,32)"}}
+        cx={{data.cx}}
+        cy={{data.cy}}
+        r={{data.r}}
+        style={{if this.spinner.elmDuration (concat "animation-duration: " this.duration "ms;")}}
+      />
+    </svg>
+  {{/each}}
+</div>

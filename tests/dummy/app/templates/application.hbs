@@ -1,3 +1,50 @@
-<h2 id="title">Welcome to Ember</h2>
+<div local-class="container">
+  <h2 id="title">Ember Ion Spinner</h2>
 
-{{outlet}}
+  <h3>Spinner types</h3>
+  <p>The type of spinner can be configured by passing the "@name" argument.</p>
+  <table>
+    <thead>
+      <tr><th>Name</th><th>Spinner</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>lines</td><td><IonSpinner @name="lines"/></td></tr>
+      <tr><td>lines-small</td><td><IonSpinner @name="lines-small"/></td></tr>
+      <tr><td>bubbles</td><td><IonSpinner @name="bubbles"/></td></tr>
+      <tr><td>circles</td><td><IonSpinner @name="circles"/></td></tr>
+      <tr><td>circular</td><td><IonSpinner @name="circular"/></td></tr>
+      <tr><td>crescent</td><td><IonSpinner @name="crescent"/></td></tr>
+      <tr><td>dots</td><td><IonSpinner @name="dots"/></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Arguments</h3>
+  <table>
+    <thead>
+      <tr><th>Argument</th><th>Spinner</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>&lt;IonSpinner @name="circular"/&gt;</td><td><IonSpinner @name="circular"/></td></tr>
+      <tr><td>&lt;IonSpinner @paused={{true}}/&gt;</td><td><IonSpinner @paused={{true}}/></td></tr>
+      <tr><td>&lt;IonSpinner @duration={{500}}/&gt;</td><td><IonSpinner @duration={{500}}/></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Colors</h3>
+  <p>
+    The color of spinners can be set globally through the CSS variable "--ion-spinner-color" or by setting its CSS "color".
+  </p>
+  <span style="color: red;"><IonSpinner/></span>
+  <span style="color: lightgrey;"><IonSpinner/></span>
+  <span style="color: blue;"><IonSpinner/></span>
+
+  <br><br>
+
+  <hr>
+
+  <br><br>
+
+  <b>Source: </b><a href="https://github.com/nickschot/ember-ion-spinner" target="_blank" rel="noreferrer noopener">github.com/nickschot/ember-ion-spinner</a><br>
+  <b>Based on: </b><a href="https://ionicframework.com/docs/api/spinner" target="_blank" rel="noreferrer noopener">ionicframework.com/docs/api/spinner</a><br>
+  <b>Ported by: </b><a href="https://github.com/nickschot" target="_blank" rel="noreferrer noopener">github.com/nickschot</a>
+</div>

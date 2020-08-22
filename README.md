@@ -1,7 +1,7 @@
 ember-ion-spinner
 ==============================================================================
 
-[Short description of the addon.]
+Ember Spinner component based on https://ionicframework.com/docs/api/spinner
 
 
 Compatibility
@@ -20,10 +20,10 @@ ember install ember-ion-spinner
 ```
 
 
-Usage
+Documentation
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+https://nickschot.github.io/ember-ion-spinner
 
 
 Contributing
